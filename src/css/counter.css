@@ -1,0 +1,120 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Main Counter Container */
+  .counter-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  /* Heading */
+  .counter-container h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  /* Button Group Styling */
+  .button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  /* Button Base Styling */
+  button {
+    padding: 3px 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: auto;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;}
+  
+  /* Button Hover Effects */
+  button:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Input Group */
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .input-group input {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 100%;
+    text-align: center;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Input Focus Effect */
+  .input-group input:focus {
+    outline: none;
+    border-color: #4caf50;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .counter-container {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    .button-group {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .input-group {
+      gap: 8px;
+    }
+  
+    button {
+      width: 100%;
+      font-size: 1rem;
+    }
+  
+    input {
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
+  

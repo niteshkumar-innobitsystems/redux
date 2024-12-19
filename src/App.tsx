@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css';
 import { Button } from 'antd';
-import SideBar from './Module/Sidebar'
+import Counter from "./redux/counter"
+
 function App() {
   return (
-    <div ><SideBar/>
+    <div >
+      <Counter/>
     </div>
   );
 }
